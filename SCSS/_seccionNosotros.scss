@@ -1,0 +1,69 @@
+/*Sección Nosotros - Estilos*/
+$fondoGrisTransparente: rgba(247, 246, 245, 0.596);
+$colorVerdeObscuro: #002419;
+
+.principalSecciones{
+    background-image: url(../IMG/Fondo.jpg);
+    width: 100%;
+    height: 1100px;
+    background-repeat: repeat;
+    background-size: cover; 
+    background-position: right bottom; 
+}
+
+.seccionNosotrosPrincipal-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    img{
+        border-radius: 30px;
+        width: 550px;
+        height: 380px;
+        padding: 25px;
+    }
+    p{
+        width: 550px;
+        height: 330px;
+        background: $fondoGrisTransparente;
+        color: $colorVerdeObscuro;
+        font-size: 16px;
+        font-weight: bolder;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+.textoNosotros{
+    background: $fondoGrisTransparente;
+    color: $colorVerdeObscuro;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Animaciones Nosotros*/
+.seccionNosotrosPrincipal-flex img{
+    animation-name: efectoImagenes; /*Nombre de la animación*/
+    animation-iteration-count: infinite; /*Cada cuanto se va a repetir la animación*/
+    animation-duration: 2s; /*Duración de la animación*/
+    animation-delay: 0; /*El tiempo que demora en  hacer la animación*/
+}
+
+@keyframes efectoImagenes{
+    0%{
+        transform: translateX(0);
+    }
+    35%{
+        transform: translateX(25px);
+    }
+    65%{
+        transform: translateX(-25px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

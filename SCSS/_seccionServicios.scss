@@ -1,0 +1,93 @@
+/*Sección Servicios - Estilos*/
+
+.serviciosGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1em; /*Espaciado*/
+    justify-items: center;
+}
+.navbar{
+    z-index: 1;
+}
+
+.serviciosGrid div img{
+    margin: auto;
+    border-radius: 50%;
+    max-height: 30rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionesService{
+    background: $fondoGrisTransparente;
+    border-radius: 30px;
+    width: 300px;
+    height: 370px;
+}
+
+.seccionesService__titulo{
+    text-align: center;
+    color: $colorVerdeObscuro;
+    margin-bottom: 18px   
+    
+}
+
+.seccionesService__parrafos{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: $colorVerdeObscuro;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+#informacionAdicionalES{
+    background: $fondoGrisTransparente;
+    display:inline-flex;
+    display: block;
+    align-content: center;
+}
+
+#informacionAdicionalH{
+    background: $fondoGrisTransparente;
+    display:inline-flex;
+    display: block;
+    align-content: center;
+}
+
+#informacionAdicionalJ{
+    background: $fondoGrisTransparente;
+    display:inline-flex;
+    display: block;
+    align-content: center;
+}
+
+.informacionAdicionalTexto{
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+
+/*Animaciones Servicios*/
+.seccionesService img:hover{
+    animation-name: efectoImagenes; /*Nombre de la animación*/
+    animation-iteration-count: infinite; /*Cada cuanto se va a repetir la animación*/
+    animation-duration: 2s; /*Duración de la animación*/
+    animation-delay: 0; /*El tiempo que demora en  hacer la animación*/
+}
+
+@keyframes efectoImagenes{
+    0%{
+        transform: translateX(0);
+    }
+    35%{
+        transform: translateX(25px);
+    }
+    65%{
+        transform: translateX(-25px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
